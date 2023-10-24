@@ -23,7 +23,7 @@ public class Vegetable {
     @Column(name = "price")
     private int price;
 
-    @Column(name ="grown_On_Tree")
+    @Column(name ="is_grown_On_Tree")
     private boolean isGrownOnTree;
 
 }

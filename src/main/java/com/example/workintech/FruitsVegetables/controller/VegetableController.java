@@ -3,7 +3,6 @@ package com.example.workintech.FruitsVegetables.controller;
 
 
 import com.example.workintech.FruitsVegetables.entity.Vegetable;
-import com.example.workintech.FruitsVegetables.services.FruitService;
 import com.example.workintech.FruitsVegetables.services.VegetableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -37,7 +36,7 @@ public class VegetableController {
         return vegetableService.save(vegetable);
     }
     @PostMapping("/{name}")
-    public List<Vegetable> listVegetableByName(@PathVariable String name){
+    public List<Vegetable> listFruitByName(@PathVariable String name){
         return vegetableService.listByName(name);
     }
     @DeleteMapping("/{id}")
